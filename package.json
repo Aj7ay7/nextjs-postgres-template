@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "node .next/standalone/server.js",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "bun run app/db/migrate.ts",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "drizzle-kit": "^0.31.8",
+    "drizzle-orm": "^0.45.1",
+    "next": "16.1.6",
+    "postgres": "^3.4.8",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.1.0",
+    "@types/react": "19.2.10",
+    "@types/react-dom": "19.2.3",
+    "chalk": "^5.6.2",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "@types/react": "19.2.10",
+    "@types/react-dom": "19.2.3"
+  }
+}
